@@ -1,0 +1,18 @@
+# Evita listar el contenido de la carpeta
+Options -Indexes
+
+# Bloquea el acceso directo a los archivos subidos
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Compatibilidad con versiones antiguas de Apache
+<IfModule !mod_authz_core.c>
+    Order Deny,Allow
+    Deny from all
+</IfModule>
+
+# Evita ejecución de archivos PHP dentro de uploads
+<FilesMatch "\.(php|php3|php4|php5|phtml|phar)$">
+    Require all denied
+</FilesMatch>
