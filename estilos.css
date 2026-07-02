@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #172033;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra superior */
+
+.barra {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8dee9;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra h1 {
+    margin: 0;
+    color: #223a59;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.barra nav a {
+    color: #223a59;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 9px 16px;
+    border-radius: 6px;
+    border: 1px solid #b8c4d3;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.barra nav a:hover {
+    background-color: #223a59;
+    color: white;
+}
+
+/* Contenido */
+
+main {
+    flex: 1;
+}
+
+.pagina {
+    width: 88%;
+    max-width: 1120px;
+    margin: 38px auto;
+}
+
+/* Encabezado del panel */
+
+.bienvenida {
+    background-color: #223a59;
+    color: white;
+    padding: 36px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+
+.bienvenida h2 {
+    margin: 0 0 12px 0;
+    font-size: 33px;
+}
+
+.bienvenida p {
+    margin: 0;
+    color: #e8eef6;
+    font-size: 17px;
+}
+
+/* Cajas */
+
+.caja {
+    background-color: white;
+    border: 1px solid #d8dee9;
+    border-radius: 10px;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+
+.caja h2 {
+    margin-top: 0;
+    font-size: 27px;
+    color: #172033;
+}
+
+.caja p {
+    color: #5b667a;
+    margin-bottom: 22px;
+}
+
+/* Login */
+
+.contenedor-login {
+    width: 430px;
+    margin: 85px auto;
+    background-color: white;
+    padding: 36px;
+    border-radius: 10px;
+    border: 1px solid #d8dee9;
+}
+
+.contenedor-login h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #223a59;
+    font-size: 28px;
+}
+
+.contenedor-login p {
+    text-align: center;
+    color: #5b667a;
+}
+
+/* Formularios */
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #172033;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #f8fafc;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #223a59;
+    background-color: white;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #223a59;
+    color: white;
+    border: 1px solid #223a59;
+    border-radius: 6px;
+    padding: 8px 13px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #2f4f78;
+}
+
+button {
+    width: 100%;
+    background-color: #223a59;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2f4f78;
+}
+
+/* Mensajes */
+
+.mensaje {
+    background-color: white;
+    color: #223a59;
+    border: 1px solid #cbd5e1;
+    border-left: 5px solid #223a59;
+    border-radius: 7px;
+    padding: 14px;
+    margin-bottom: 24px;
+}
+
+.mensaje-error {
+    background-color: #fff1f2;
+    color: #9f1239;
+    border: 1px solid #fecdd3;
+    border-left: 5px solid #e11d48;
+    border-radius: 7px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #223a59;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #334155;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.sin-archivos {
+    background-color: #f8fafc;
+    border: 1px dashed #9aa7bd;
+    color: #5b667a;
+    padding: 18px;
+    border-radius: 7px;
+}
+
+/* Botones de acciones */
+
+.btn-descargar,
+.btn-eliminar {
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-descargar {
+    background-color: #223a59;
+}
+
+.btn-descargar:hover {
+    background-color: #2f4f78;
+}
+
+.btn-eliminar {
+    background-color: #dc2626;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ffffff;
+    color: #5b667a;
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid #d8dee9;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .barra {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+        padding: 18px;
+    }
+
+    .barra nav a {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    .pagina {
+        width: 92%;
+    }
+
+    .bienvenida {
+        padding: 26px;
+    }
+
+    .bienvenida h2 {
+        font-size: 27px;
+    }
+
+    .contenedor-login {
+        width: 90%;
+        margin-top: 55px;
+    }
+}

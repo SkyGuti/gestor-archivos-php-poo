@@ -1,0 +1,5 @@
+# Evita que se vea el listado de archivos del proyecto
+Options -Indexes
+
+# Archivo que debe abrirse primero
+DirectoryIndex index.php login.php
